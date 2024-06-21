@@ -205,7 +205,15 @@ User realated Command
  whois     : will tell you about the websdites whois 
  ifplugstatus  : tell whether a cable is plugged in or out
  --------------------------------------------------------------------------------------------------
-						 
+* Secure Shell (SSH) - popular network protocol that lets us access a remote computer i=over an inscure network 
+  - ssh user@names
+    ssh ubuntu@10.22.2.22
+	
+	ssh -p [port] user@host -- using perticular port 
+	ssh -p 22 ec2-user@10.22.2.22
+	
+	ssh -i 10.22.2.22
+	telnet host via telnet default port 23						 
 						 
 
 
