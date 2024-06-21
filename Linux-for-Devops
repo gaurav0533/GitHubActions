@@ -55,7 +55,7 @@ Linux for Devops commands
  Soft Link             : if main file are deleted then softlink also deleted 
  ln                    : stand for link  
  ln -s                 : /root/devops/Aws/devops_file.txt softlink-file 
- ls -ltr               : to listing all details
+ ls -ltr               : to listing all files and details 
  ln                    : to crtae hardlink files
  ln devops/Aws/devops_file.txt hardlink-file
  cut                   : to cut the bytes from the filr content 
@@ -68,6 +68,23 @@ Linux for Devops commands
  VI/vim Editor it is like notepad : vi demofile.txt 
                               : i - for insert mode
 							  press Esc :wq to save the files 
+							  
+							  vi First.txt
+		i -nsert at cursor goes into insert mode
+		ecs - terminate insert mode and came to command mode
+		u - undo last change 
+		dd - delete lines
+		3dd  - delete 3 lines
+		/ - search
+		Moving within a file 
+		k - move cursor
+		j - move cursor down
+		h - move cursor left
+		l -move cursor right
+		:se nu - to popuklar the line number in vi saving and closing the file
+		:w   - save tye file bt keep it open
+		:q   - Quite without saving   - esc swift:q! - if ypu overwrite the file 
+		esc :wq   - save the file and quite
  Wget                  : Direct download files from the internet 
  cat/etc/os-release    : get verion of machine 
  ifconfig              : get ip address 
@@ -76,9 +93,7 @@ Linux for Devops commands
 						 example : mkdir Devops_file/{aws.txt,azure.txt.gcp.txt}
 						 tar -cvf allfiles.tarDevops_file  - zip/tar all files  ( Create verbose file)
 						 tae -xvf allfiles.tar             - untar operation   ( Extract verbose file) 
-						 
-						 
-
+To execute any coammnd - ./shell.sh 
 ------------------------------------------------------------------------------------------------------------------		
 cd ~/Desktop/EC2pemfile/ path for where the key is stored 
 Login related 
@@ -192,7 +207,6 @@ User realated Command
 ------------------------------------------------------------------------------------------
 * NETWORKING Commands in Linux *
  ifconfig  :disply and manupulate route network interfaces
- Ping     : check connectivity btwn tow nodes
  Ping     : check connectivity btwn tow nodes 
  netstat  : Display connection information
  ss       : it is a replacement of netstat
@@ -200,11 +214,11 @@ User realated Command
  nslookup  : fine dns related query 
  route    :  shows and manipulate ip routing table 
  hostname  : to identify a network names
- curl or wget : to doanload files form internet 
+ curl or wget : wget - to help download the package from the internet. curl - to see the contents of the websides
  mtr       : combine ping and tracepath into single command 
  whois     : will tell you about the websdites whois 
- ifplugstatus  : tell whether a cable is plugged in or out
- --------------------------------------------------------------------------------------------------
+ ifplugstatus  : tell whether a cable is plugged in or out 
+---------------------------------------------------------------------------------------------
 * Secure Shell (SSH) - popular network protocol that lets us access a remote computer i=over an inscure network 
   - ssh user@names
     ssh ubuntu@10.22.2.22
@@ -213,7 +227,16 @@ User realated Command
 	ssh -p 22 ec2-user@10.22.2.22
 	
 	ssh -i 10.22.2.22
-	telnet host via telnet default port 23						 
+	telnet host via telnet default port 23
+	
+	ssh-keygen
+	where the public key nad private key will be available ( /root/.ssh/ )
+	cd /root/.ssh/
+	cat id_ed25519.pub
+	cat id_ed25519
+	------------------------------------------------------------------------------------------------------
+	
+    
 						 
 
 
