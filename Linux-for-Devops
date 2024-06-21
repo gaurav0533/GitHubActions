@@ -192,7 +192,18 @@ User realated Command
 ------------------------------------------------------------------------------------------
 * NETWORKING Commands in Linux *
  ifconfig  :disply and manupulate route network interfaces
+ Ping     : check connectivity btwn tow nodes
  Ping     : check connectivity btwn tow nodes 
+ netstat  : Display connection information
+ ss       : it is a replacement of netstat
+ dig google.com  : Query DNS realted information
+ nslookup  : fine dns related query 
+ route    :  shows and manipulate ip routing table 
+ hostname  : to identify a network names
+ curl or wget : to doanload files form internet 
+ mtr       : combine ping and tracepath into single command 
+ whois     : will tell you about the websdites whois 
+ ifplugstatus  : tell whether a cable is plugged in or out
  
 						 
 						 
